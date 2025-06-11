@@ -1,8 +1,8 @@
 # 🍽️ Mama's Kitchen 
 
-Welcome to **Mama's Kitchen**, a responsive and fully functional **Swiggy landing page clone** built during my internship. This project replicates the user experience of a food delivery platform, including menu browsing, cart management, and a simulated checkout flow.
+Welcome to **Mama's Kitchen**, a responsive and fully functional **Online food Delivery Website** built during my internship. This project replicates the user experience of a food delivery platform, including menu browsing, cart management, and a simulated checkout flow.
 
-![Banner](./assets/banner.png) <!-- Replace with actual screenshot path or remove -->
+![Banner](./assets/logo.png) <!-- Replace with actual screenshot path or remove -->
 
 ---
 
