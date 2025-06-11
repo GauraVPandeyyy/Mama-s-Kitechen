@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+
+  <title>Item Details</title>
+
+  <style>
+    #bottom-alert {
+      position: fixed;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 9999;
+      display: none;
+      width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card mx-auto mt-5" style="width: 18rem;">
+      <img id="item-img" class="rounded-circle" width="250" height="250" alt="Item Image">
+      <div class="card-body">
+        <div class="row mb-3 pe-2">
+          <p class="col-6" id="item-price">Price</p>
+          <a href="#" class="btn btn-secondary col-6" id="add-btn" onclick="addToCart()">ADD</a>
+        </div>
+        <p class="card-text h5" id="item-title">Title</p>
+      </div>
+    </div>
+
+    <div id="bottom-alert" class="alert alert-success" role="alert">
+      <div class="d-flex justify-content-between align-items-center">
+        <p>Item added</p>
+        <a href="cart.html" class="h6 text-decoration-none text-black">VIEW CART <i
+            class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const itemData = JSON.parse(localStorage.getItem('selectedItem'));
+
+      // Validate itemData before using
+      if (itemData && itemData.image && itemData.title && itemData.price) {
+        document.getElementById("item-img").src = itemData.image;
+        document.getElementById("item-title").innerText = itemData.title;
+        document.getElementById("item-price").innerText = itemData.price + " Rs";
+      } else {
+        alert("Item data not found. Please go back and select an item.");
+      }
+    });
+
+    // Add to Cart Logic
+    function addToCart() {
+      const itemData = JSON.parse(localStorage.getItem('selectedItem'));
+      if (!itemData) return;
+
+      const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+      const existingIndex = cart.findIndex(item => item.title === itemData.title);
+      if (existingIndex !== -1) {
+        cart[existingIndex].quantity += 1;
+      } else {
+        cart.push({ ...itemData, quantity: 1 });
+      }
+
+      localStorage.setItem("cart", JSON.stringify(cart));
+
+      const alertBox = document.getElementById("bottom-alert");
+      const addBtn = document.getElementById("add-btn");
+
+      alertBox.style.display = "block";
+      addBtn.innerText = "ADDED";
+      addBtn.style.backgroundColor = "green";
+    }
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

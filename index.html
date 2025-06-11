@@ -1,0 +1,888 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+
+    <title>Food Corner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="container-fluid">
+
+
+        <nav class="navbar navbar-light bg-light mb-3 fixed-top px-3 shadow-lg">
+            <div class="left flex align-items-center">
+                <a class="navbar-brand" href="#">
+                    <img src="/assets/logo.png" height="70" class="rounded-circle" alt="">
+                </a>
+                <a href="#" id="nav-other" class="d-none d-md-block">Other <i class="fa-solid fa-chevron-down"></i></a>
+            </div>
+
+            <div class="right">
+                <!-- <i class="fa-solid fa-desktop d-block d-sm-none"></i> -->
+                <a href="#" class="a-hide"><i class="fa-solid fa-desktop"></i>Corporate </a>
+                <a href="#" class="a-hide"><i class="fa-solid fa-magnifying-glass"></i> Search </a>
+                <a href="#" class="a-hide">Offers </a>
+                <a href="#" class="a-hide">Help </a>
+                <a href="#" class="a-hide"> <i class="fa-regular fa-user"></i> Sign In </a>
+                <a href="cart.html" class="d-block"> <i class="fa-solid fa-cart-arrow-down"></i> Cart </a>
+            </div>
+        </nav>
+
+        <!-- carasoul -->
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://wallpapers.com/images/high/food-4k-69l9cf3tdbbao95s.webp" class="d-block w-100"
+                        alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://wallpapers.com/images/high/food-4k-lyojdps4vwhuemoy.webp" class="d-block w-100"
+                        alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://wallpapers.com/images/high/food-4k-xlm51q9ps1vgpd12.webp" class="d-block w-100"
+                        alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://wallpapers.com/images/high/food-4k-q49cuqvgdryfhk7o.webp" class="d-block w-100"
+                        alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
+
+
+        <div class="container">
+
+
+            <div class="row">
+                <div class="col-sm-10 mx-auto">
+
+
+
+                    <!-- Top hero -->
+                    <div class="row pt-5">
+                        <div class="col-md-6">
+                            <h4>What's on your mind?</h4>
+                        </div>
+                        <div class="col-6 d-none d-md-flex justify-content-end">
+                            <i class="fa-solid fa-arrow-left rounded-circle p-2 bg-light"></i>
+                            <i class="fa-solid fa-arrow-right rounded-circle py-2 px-2 bg-secondary"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="d-flex flex-nowrap scroll-hide">
+                        <div class="mb-4">
+                            <a href="items.html" class="addItem" onclick='selectItem(this)'
+                                data-title="Bharat Mewad Ice Cream" data-price="200">
+                                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_chocolate%20icecream.png"
+                                    alt="" class="rounded-circle" width="150" height="150">
+                            </a>
+
+                        </div>
+                        <div class="mb-4"><a href="items.html" onclick='selectItem(this)' data-title="Punjabi the Lassi"
+                                data-price="100"><img
+                                    src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/3f2c40d3-96c7-44ce-8b35-aef6ea746cdc_lassi.png"
+                                    alt="" class="rounded-circle" width="150" height="150"></a>
+                        </div>
+                        <div class="mb-4"><a href="items.html" onclick="selectItem(this)" data-title="The Lajeej Shake"
+                                data-price="150"><img
+                                    src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_Shake.png"
+                                    alt="" class="rounded-circle" width="150" height="150"></a></div>
+                        <div class="mb-4"> <a href="items.html" onclick="selectItem(this)"
+                                data-title="The Delicious Food" data-price="120"><img
+                                    src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Khichdi.png"
+                                    alt="" class="rounded-circle" width="150" height="150"></a></div>
+                        <div class="mb-4"><a href="items.html" onclick="selectItem(this)"
+                                data-title="The Mood Freshener coffee" data-price="80"><img
+                                    src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_coffee.png"
+                                    alt="" class="rounded-circle" width="150" height="150"></a></div>
+                        <div class="mb-4"><a href="items.html" onclick="selectItem(this)"
+                                data-title="The Fav one Noodles" data-price="180"><img
+                                    src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Noodles.png"
+                                    alt="" class="rounded-circle" width="150" height="150"></a></div>
+
+                        <!-- extra -->
+
+                        <div class="mb-4">
+                            <a href="items.html"><img
+                                    src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Noodles.png"
+                                    alt="" class="rounded-circle" width="150" height="150"></a>
+                        </div>
+                        <div class="mb-4"><a href="#"><img
+                                    src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_chole%20bhature.png"
+                                    alt="" class="rounded-circle" width="150" height="150"></a>
+                        </div>
+                        <div class="mb-4"><a href="#"><img
+                                    src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Paratha.png"
+                                    alt="" class="rounded-circle" width="150" height="150"></a></div>
+                        <div class="mb-4"> <a href="#"><img
+                                    src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2025/1/24/897bc750-6b57-4e7d-9365-87c1ab2c6d7e_Chinese2.png"
+                                    alt="" class="rounded-circle" width="150" height="150"></a></div>
+                        <div class="mb-4"><a href="#"><img
+                                    src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Gulab%20jamun.png"
+                                    alt="" class="rounded-circle" width="150" height="150"></a></div>
+                        <div class="mb-4"><a href="#"><img
+                                    src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2025/1/24/05a939eb-fd4e-4308-b989-d1c54f4421b3_northindian1.png"
+                                    alt="" class="rounded-circle" width="150" height="150"></a></div>
+
+
+
+
+
+                    </div>
+
+
+
+
+                    <hr>
+
+                    <div class="row mt-5 mb-4">
+                        <div class="col-12 col-md-6">
+                            <h4>Top restaurant chains in Chhindwara</h4>
+                        </div>
+                        <div class="col-6 d-none d-md-flex justify-content-end">
+                            <i class="fa-solid fa-arrow-left rounded-circle p-2 bg-light"></i>
+                            <i class="fa-solid fa-arrow-right rounded-circle py-2 px-2 bg-secondary"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="row row-cols-1 row-cols-md-3">
+                        <div class="col mb-4">
+                            <div class="card rounded-top-4"> <a href="items.html" onclick="selectItem(this)"
+                                    data-title="Chinese, Beverages, Fast Food" data-price="500">
+                                    <img src="./assets/imgi_7_smo2yv6budwe0ciye1ry.jpeg"
+                                        class="card-img-top rounded-top-4" alt="..." width="200px" height="190px">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Hotel Sai Nath & Sai Restaurant</h5>
+                                    <p class="card-text">
+                                    <p class="fw-semibold"> <i
+                                            class="fa-regular fa-star rounded-circle py-1 px-1 bg-success"></i> 4.4
+                                        - 44
+                                        ~ 50 mins</p>
+                                    North Indian, South Indian, Chinese, Beverages, Fast Food
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="assets/imgi_8_dh0qsuqritnmbncwrni3.jpeg" class="card-img-top" alt="..."
+                                    width="200px" height="190px">
+                                <div class="card-body">
+                                    <h5 class="card-title">Siddhi Vinayak</h5>
+                                    <p class="card-text">
+                                    <p class="fw-semibold"> <i
+                                            class="fa-regular fa-star rounded-circle py-1 px-1 bg-success"></i> 2.4 - 24
+                                        ~ 35 mins</p>
+                                    Fast Food, Indian, Momos , Fried Momos , Half and full both available</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="assets/imgi_9_5c6d3a34-1ac1-44ca-94cf-7e9122459ebc_945448.jpg"
+                                    class="card-img-top" alt="..." width="200px" height="190px">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tunday kawabi</h5>
+                                    <p class="card-text">
+                                    <p class="fw-semibold"> <i
+                                            class="fa-regular fa-star rounded-circle py-1 px-1 bg-success"></i> 3.4 - 44
+                                        ~ 50 mins</p>
+                                    North Indian, South Indian, Chinese, Beverages, Fast Food, Desserts</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <h4 class="fw-semibold mt-lg-4 mb-md-5">Restaurants with online food delivery in Chhindwara</h4>
+
+
+
+
+                    <div class="d-flex bg-highlight mb-5 flex-wrap">
+                        <div class="p-2 bg-secondary rounded-pill m-2">Filters</div>
+                        <div class="p-2 bg-secondary rounded-pill m-2">Sort By</div>
+                        <div class="p-2 bg-secondary rounded-pill m-2">Ratings</div>
+                        <div class="p-2 bg-secondary rounded-pill m-2">Pure veg</div>
+                        <div class="p-2 bg-secondary rounded-pill m-2">Offers</div>
+                        <div class="p-2 bg-secondary rounded-pill m-2">Less than 300</div>
+                    </div>
+
+
+                    <div class="row row-cols-1 row-cols-md-4 mt-md-5">
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="./assets/imgi_10_c6192e15-89b6-444b-958d-8f85469b87d7_1014987.jpg"
+                                    class="card-img-top" alt="..." width="200px" height="130px">
+                                <div class="card-body">
+                                    <h6 class="card-title fw-bold">Hotel Sai Nath & Sai Restaurant</h6>
+                                    <p class="card-text fs-1">
+                                    <p class="fw-bold"> <i
+                                            class="fa-regular fa-star rounded-circle py-1 px-1 bg-success"></i>
+                                        4.4 - 44
+                                        ~ 50 mins</p>
+                                    North Indian, South Indian, Chinese, Beverages, Fast Food
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="./assets/imgi_9_5c6d3a34-1ac1-44ca-94cf-7e9122459ebc_945448.jpg"
+                                    class="card-img-top" alt="..." width="200px" height="130px">
+                                <div class="card-body">
+                                    <h6 class="card-title fw-bold">Hotel Sai Nath & Sai Restaurant</h6>
+                                    <p class="card-text fs-1">
+                                    <p class="fw-bold"> <i
+                                            class="fa-regular fa-star rounded-circle py-1 px-1 bg-success"></i>
+                                        4.4 - 44
+                                        ~ 50 mins</p>
+                                    North Indian, South Indian, Chinese, Beverages, Fast Food
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="./assets/imgi_8_dh0qsuqritnmbncwrni3.jpeg" class="card-img-top" alt="..."
+                                    width="200px" height="130px">
+                                <div class="card-body">
+                                    <h6 class="card-title fw-bold">Hotel Sai Nath & Sai Restaurant</h6>
+                                    <p class="card-text fs-1">
+                                    <p class="fw-bold"> <i
+                                            class="fa-regular fa-star rounded-circle py-1 px-1 bg-success"></i>
+                                        4.4 - 44
+                                        ~ 50 mins</p>
+                                    North Indian, South Indian, Chinese, Beverages, Fast Food
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="./assets/imgi_7_smo2yv6budwe0ciye1ry.jpeg" class="card-img-top" alt="..."
+                                    width="200px" height="130px">
+                                <div class="card-body">
+                                    <h6 class="card-title fw-bold">Hotel Sai Nath & Sai Restaurant</h6>
+                                    <p class="card-text fs-1">
+                                    <p class="fw-bold"> <i
+                                            class="fa-regular fa-star rounded-circle py-1 px-1 bg-success"></i>
+                                        4.4 - 44
+                                        ~ 50 mins</p>
+                                    North Indian, South Indian, Chinese, Beverages, Fast Food
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="./assets/imgi_6_fa4944f0cfdcbca2bec1f3ab8e3db3f7.jpeg" class="card-img-top"
+                                    alt="..." width="200px" height="130px">
+                                <div class="card-body">
+                                    <h6 class="card-title fw-bold">Hotel Sai Nath & Sai Restaurant</h6>
+                                    <p class="card-text fs-1">
+                                    <p class="fw-bold"> <i
+                                            class="fa-regular fa-star rounded-circle py-1 px-1 bg-success"></i>
+                                        4.4 - 44
+                                        ~ 50 mins</p>
+                                    North Indian, South Indian, Chinese, Beverages, Fast Food
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="./assets/imgi_5_glepanv4xjfnhsbieam1.jpeg" class="card-img-top" alt="..."
+                                    width="200px" height="130px">
+                                <div class="card-body">
+                                    <h6 class="card-title fw-bold">Hotel Sai Nath & Sai Restaurant</h6>
+                                    <p class="card-text fs-1">
+                                    <p class="fw-bold"> <i
+                                            class="fa-regular fa-star rounded-circle py-1 px-1 bg-success"></i>
+                                        4.4 - 44
+                                        ~ 50 mins</p>
+                                    North Indian, South Indian, Chinese, Beverages, Fast Food
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="./assets/imgi_4_69aee467-3a57-48af-aa0c-167da90e34b8_962642.jpg"
+                                    class="card-img-top" alt="..." width="200px" height="130px">
+                                <div class="card-body">
+                                    <h6 class="card-title fw-bold">Hotel Sai Nath & Sai Restaurant</h6>
+                                    <p class="card-text fs-1">
+                                    <p class="fw-bold"> <i
+                                            class="fa-regular fa-star rounded-circle py-1 px-1 bg-success"></i>
+                                        4.4 - 44
+                                        ~ 50 mins</p>
+                                    North Indian, South Indian, Chinese, Beverages, Fast Food
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="./assets/imgi_3_2469fa88ee9b0b5d1366ba88f2a7fa7f.jpeg" class="card-img-top"
+                                    alt="..." width="200px" height="130px">
+                                <div class="card-body">
+                                    <h6 class="card-title fw-bold">Hotel Sai Nath & Sai Restaurant</h6>
+                                    <p class="card-text fs-1">
+                                    <p class="fw-bold"> <i
+                                            class="fa-regular fa-star rounded-circle py-1 px-1 bg-success"></i>
+                                        4.4 - 44
+                                        ~ 50 mins</p>
+                                    North Indian, South Indian, Chinese, Beverages, Fast Food
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="./assets/imgi_20_d45c9f69-585a-482e-bbd0-e94e95a1f50c_914206.jpg"
+                                    class="card-img-top" alt="..." width="200px" height="130px">
+                                <div class="card-body">
+                                    <h6 class="card-title fw-bold">Hotel Sai Nath & Sai Restaurant</h6>
+                                    <p class="card-text fs-1">
+                                    <p class="fw-bold"> <i
+                                            class="fa-regular fa-star rounded-circle py-1 px-1 bg-success"></i>
+                                        4.4 - 44
+                                        ~ 50 mins</p>
+                                    North Indian, South Indian, Chinese, Beverages, Fast Food
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="./assets/imgi_18_jo9pdipf4elcuch8g55q.jpeg" class="card-img-top" alt="..."
+                                    width="200px" height="130px">
+                                <div class="card-body">
+                                    <h6 class="card-title fw-bold">Hotel Sai Nath & Sai Restaurant</h6>
+                                    <p class="card-text fs-1">
+                                    <p class="fw-bold"> <i
+                                            class="fa-regular fa-star rounded-circle py-1 px-1 bg-success"></i>
+                                        4.4 - 44
+                                        ~ 50 mins</p>
+                                    North Indian, South Indian, Chinese, Beverages, Fast Food
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="./assets/imgi_1_6c8a7784-0b42-419e-81f9-f2ab2319a479_1003414.jpg"
+                                    class="card-img-top" alt="..." width="200px" height="130px">
+                                <div class="card-body">
+                                    <h6 class="card-title fw-bold">Hotel Sai Nath & Sai Restaurant</h6>
+                                    <p class="card-text fs-1">
+                                    <p class="fw-bold"> <i
+                                            class="fa-regular fa-star rounded-circle py-1 px-1 bg-success"></i>
+                                        4.4 - 44
+                                        ~ 50 mins</p>
+                                    North Indian, South Indian, Chinese, Beverages, Fast Food
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="./assets/imgi_20_d45c9f69-585a-482e-bbd0-e94e95a1f50c_914206.jpg"
+                                    class="card-img-top" alt="..." width="200px" height="130px">
+                                <div class="card-body">
+                                    <h6 class="card-title fw-bold">Hotel Sai Nath & Sai Restaurant</h6>
+                                    <p class="card-text fs-1">
+                                    <p class="fw-bold"> <i
+                                            class="fa-regular fa-star rounded-circle py-1 px-1 bg-success"></i>
+                                        4.4 - 44
+                                        ~ 50 mins</p>
+                                    North Indian, South Indian, Chinese, Beverages, Fast Food
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="./assets/imgi_21_uwp7um5patbxkip8gnxg.jpeg" class="card-img-top" alt="..."
+                                    width="200px" height="130px">
+                                <div class="card-body">
+                                    <h6 class="card-title fw-bold">Hotel Sai Nath & Sai Restaurant</h6>
+                                    <p class="card-text fs-1">
+                                    <p class="fw-bold"> <i
+                                            class="fa-regular fa-star rounded-circle py-1 px-1 bg-success"></i>
+                                        4.4 - 44
+                                        ~ 50 mins</p>
+                                    North Indian, South Indian, Chinese, Beverages, Fast Food
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="./assets/imgi_23_crncfqmsuosriqcrp9ez.jpeg" class="card-img-top" alt="..."
+                                    width="200px" height="130px">
+                                <div class="card-body">
+                                    <h6 class="card-title fw-bold">Hotel Sai Nath & Sai Restaurant</h6>
+                                    <p class="card-text fs-1">
+                                    <p class="fw-bold"> <i
+                                            class="fa-regular fa-star rounded-circle py-1 px-1 bg-success"></i>
+                                        4.4 - 44
+                                        ~ 50 mins</p>
+                                    North Indian, South Indian, Chinese, Beverages, Fast Food
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="./assets/imgi_2_f249ac91-2d8f-472b-b60c-4a7ea4ed9f86_1003415.jpg"
+                                    class="card-img-top" alt="..." width="200px" height="130px">
+                                <div class="card-body">
+                                    <h6 class="card-title fw-bold">Hotel Sai Nath & Sai Restaurant</h6>
+                                    <p class="card-text fs-1">
+                                    <p class="fw-bold"> <i
+                                            class="fa-regular fa-star rounded-circle py-1 px-1 bg-success"></i>
+                                        4.4 - 44
+                                        ~ 50 mins</p>
+                                    North Indian, South Indian, Chinese, Beverages, Fast Food
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="./assets/imgi_7_smo2yv6budwe0ciye1ry.jpeg" class="card-img-top" alt="..."
+                                    width="200px" height="130px">
+                                <div class="card-body">
+                                    <h6 class="card-title fw-bold">Hotel Sai Nath & Sai Restaurant</h6>
+                                    <p class="card-text fs-1">
+                                    <p class="fw-bold"> <i
+                                            class="fa-regular fa-star rounded-circle py-1 px-1 bg-success"></i>
+                                        4.4 - 44
+                                        ~ 50 mins</p>
+                                    North Indian, South Indian, Chinese, Beverages, Fast Food
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <div class="col-sm-9 mx-auto">
+
+                    <h4 class="fw-semibold mt-lg-4 mb-md-5 fw-bold">Best Places to Eat Across Cities</h4>
+
+                    <div class="row row-cols-1 row-cols-md-4">
+                        <div class="col mb-4">
+                            <div class="card">
+                                <div class="card-body text-center rounded">
+                                    <a href="#"> Best Restaurants in Lucknow</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <div class="card-body text-center rounded">
+                                    <a href="#"> Best Restaurants in Kanpur</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <div class="card-body text-center rounded">
+                                    <a href="#"> Best Restaurants in Ludhiana</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <div class="card-body text-center rounded">
+                                    <a href="#"> Best Restaurants in Gorakhpur</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <div class="card-body text-center rounded">
+                                    <a href="#"> Best Restaurants in Delhi</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <div class="card-body text-center rounded">
+                                    <a href="#"> Best Restaurants in Indore</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <div class="card-body text-center rounded">
+                                    <a href="#"> Best Restaurants in Ahemdabad</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <div class="card-body text-center rounded">
+                                    <a href="#"> Best Restaurants in Chennai</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <div class="card-body text-center rounded">
+                                    <a href="#"> Best Restaurants in Noida</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <div class="card-body text-center rounded">
+                                    <a href="#"> Best Restaurants in Bangalore</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <div class="card-body text-center rounded">
+                                    <a href="#"> Best Restaurants in Gurgaon</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <div class="card-body text-center rounded fw-bolder">
+                                    <a href="#" class="fw-bolder text-danger"> Show More <i
+                                            class="fa-solid fa-chevron-down"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <hr>
+
+                    <h4 class="fw-semibold mt-lg-4 mb-md-5 fw-bold">
+                        Best Cuisines Near Me</h4>
+
+                    <div class="row row-cols-1 row-cols-md-4">
+                        <div class="col mb-4">
+                            <div class="card">
+                                <div class="card-body text-center rounded">
+                                    <a href="#"> Chinese Restaurant Near Me</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <div class="card-body text-center rounded">
+                                    <a href="#">South Indian Restaurant Near Me
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <div class="card-body text-center rounded">
+                                    <a href="#">Indian Restaurant Near Me
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <div class="card-body text-center rounded">
+                                    <a href="#">Kerala Restaurant Near Me
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <div class="card-body text-center rounded">
+                                    <a href="#">Korean Restaurant Near Me
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <div class="card-body text-center rounded">
+                                    <a href="#"> Bengali Restaurant Near Me
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <div class="card-body text-center rounded">
+                                    <a href="#">Punjabi Restaurant Near Me
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <div class="card-body text-center rounded">
+                                    <a href="#"> Andhra Restaurant Near Me
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <div class="card-body text-center rounded">
+                                    <a href="#">Italian Restaurant Near Me
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <div class="card-body text-center rounded">
+                                    <a href="#">Seafood Restaurant Near Me
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <div class="card-body text-center rounded">
+                                    <a href="#">North Indian Restaurant Near Me
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <div class="card-body text-center rounded fw-bolder">
+                                    <a href="#" class="fw-bolder text-danger"> Show More <i
+                                            class="fa-solid fa-chevron-down"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                    <h4 class="fw-semibold mt-lg-4 mb-md-5 fw-bold">Explore Every Restaurants Near Me</h4>
+
+                    <div class="row row-cols-1 row-cols-md-3">
+                        <div class="col mb-4">
+                            <div class="card">
+                                <div class="card-body text-center rounded">
+                                    <p class="card-text">
+                                        Explore Restaurants Near Me
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <div class="card-body text-center rounded">
+                                    <p class="card-text">
+                                        Explore Top Rated Restaurants Near Me
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <div class="container-fluid" id="footer">
+        <div class="row pt-4">
+            <div class="col-s-10 col-11 mx-auto">
+                <div class="row">
+                    <div class="col-12 col-md-6 text-center">
+                        <h5 class="fw-bolder">For better experience,download the Swiggy app now</h5>
+                    </div>
+                    <div class="col-12 col-md-6 pt-2 pt-md-0 d-flex justify-content-around">
+                        <a href="#">
+                            <img src="assets/imgi_70_play_store.png" alt="" width="160">
+                        </a>
+
+                        <a href="#">
+                            <img src="assets/imgi_71_app_store.png" alt="" width="160">
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="row row-cols-1 row-cols-md-5 pt-5">
+                    <div class="col mb-4">
+                        <div class="row">
+                            <a class="navbar-brand" href="#">
+                                <img src="./assets/logo.png" class="rounded-circle" height="70" alt="">
+                            </a>
+                        </div>
+                        <div class="row">
+                            <p>© 2025 Mama's kitchen Limited</p>
+                        </div>
+                    </div>
+
+                    <div class="col mx-auto mb-4 d-flex flex-column">
+                        <h5>Company</h5>
+                        <a href="#">About Us</a>
+                        <a href="#">Swiggy Corporate</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Team</a>
+                        <a href="#">Swiggy One</a>
+                        <a href="#">Swiggy Instamart</a>
+                        <a href="#">Swiggy Dineout</a>
+                        <a href="#">wiggy Genie</a>
+                    </div>
+
+
+                    <div class="col mx-auto mb-4 d-flex flex-column">
+                        <h5>Contact us</h5>
+                        <a href="#">Help & Support</a>
+                        <a href="#">Partner with us</a>
+                        <a href="#">CRide with us</a>
+
+                    </div>
+
+                    <div class="col mb-4 d-flex flex-column">
+                        <h5>Available in:</h5>
+                        <a href="#">Bangalore</a>
+                        <a href="#">Gurgaon</a>
+                        <a href="#">Delhi</a>
+                        <a href="#">Mumbai</a>
+                        <a href="#">Pune</a>
+
+                    </div>
+                    <div class="col mb-4 d-flex flex-column">
+                        <h5>Life at Swiggy</h5>
+                        <a href="#">Explore with Swiggy</a>
+                        <a href="#">Swiggy News</a>
+                        <a href="#">Snackables</a>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script> -->
+</body>
+
+</html>
